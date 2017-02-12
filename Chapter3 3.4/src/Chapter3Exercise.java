@@ -3,6 +3,8 @@ public class Chapter3Exercise {
 
 	public static void main(String[] args) {
 		// Selecting random month 
+		//Sysyem randomly generates an integer between 1 and 12 and displays the month
+		
 		int number1 = (int) (System.currentTimeMillis() % 12 + 1);
 		  String month = "";
 		   
@@ -21,7 +23,7 @@ public class Chapter3Exercise {
 		  case 12: month = "December"; break;
 		  }
 		   
-		  System.out.println(month);
+		  System.out.println(month); // Displays English Random month
 		 
 
 	}
