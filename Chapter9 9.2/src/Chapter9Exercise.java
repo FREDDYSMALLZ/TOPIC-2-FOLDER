@@ -1,30 +1,26 @@
-
-public class Chapter9Exercise {
-
-	public static void main(String[] args) {
+public static void main(String[] args) {
 		// Follows an example of the circle class
+		//Also follows an example of the Account class
 		
-		Stock stock = new Stock("SUNW", "Sun MicroSystems Inc.");
-	      stock.setPreviousClosingPrice(100);
+		Stock stock = new Stock("ORCL", "Oracle Corporation");//Stock symbol and name
+	      stock.setPreviousClosingPrice(34.5);//sets the previous closing price
 
-	      // Set current price
-	      stock.setCurrentPrice(90);
-
+	      stock.setCurrentPrice(34.35);//sets the current price
+	      
 	      // Display stock info
-	      System.out.println("Previous Closing Price: " +
-	        stock.getPreviousClosingPrice());
-	      System.out.println("Current Price: " +
-	        stock.getCurrentPrice());
-	      System.out.println("Price Change: " +
-	        stock.getChangePercent() * 100 + "%");
+	      
+System.out.println("Previous Closing Price: " + stock.getPreviousClosingPrice());
+System.out.println("Current Price: " + stock.getCurrentPrice());
+System.out.println("Price Change: " + stock.getChangePercent() * 100 + "%");
+
 	    }
 	  }
 
 	class Stock {
-	  String symbol;
-	  String name;
-	  double previousClosingPrice;
-	  double currentPrice;
+	  String symbol;//Displays the stock symbol	
+	  String name;//Name of the stock
+	  double previousClosingPrice;//stock price for the previous day
+	  double currentPrice;//stock price for the current time
 
 	  public Stock() {
 	  }
@@ -56,5 +52,7 @@ public class Chapter9Exercise {
 	  }
 	
 	}
+
+
 
 
