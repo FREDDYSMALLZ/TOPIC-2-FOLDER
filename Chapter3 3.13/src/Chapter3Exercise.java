@@ -9,8 +9,8 @@ public class Chapter3Exercise {
 		 
 		  // Prompt the user to enter filing status
 		  System.out
-		    .print("(0-single filer, 1-married jointly or qualifying widow(er), "
-		      + "\n2-married separately, 3-head of household)\n"
+		    .print("(0-single filer, 1-married jointly or" +" qualifying widow(er), 
+		      2-married separately, 3-head of" + " household)
 		      + "Enter the filing status: ");
 		  
 		  int status = input.nextInt();
@@ -102,8 +102,8 @@ public class Chapter3Exercise {
 		      * 0.25 + (190200 - 117450) * 0.28 + (372950 - 190200)
 		      * 0.33 + (income - 372950) * 0.35;
 		  } else {
-		   System.out.println("Error: invalid status");
-		   System.exit(1);
+		   System.out.println(" Display wrong status);
+		   
 		  }
 		 
 		  // Display the result to the console
